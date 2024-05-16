@@ -7,5 +7,10 @@ int Sizningyosh= int.Parse(Console.ReadLine());
 
 int TotiqushYoshi = 2;
 int yoshlarFarqi = Sizningyosh-TotiqushYoshi;
-Console.Write($"Siz va to'tiqushning yoshlar farqi: {yoshlarFarqi}");
+Console.WriteLine($"Birinchi raqam ikkinchi raqamdan katta {Sizningyosh > TotiqushYoshi}");
+Console.WriteLine($"Birinchi raqam ikkinchi raqamdan katta yoki teng {Sizningyosh >= TotiqushYoshi}");
+Console.WriteLine($"Birinchi raqam ikkinchi raqamdan kichik {Sizningyosh > TotiqushYoshi}");
+Console.WriteLine($"Birinchi raqam ikkinchi raqamdan kichik yoki teng {Sizningyosh <= TotiqushYoshi}");
+Console.WriteLine($"Birinchi raqam ikkinchi raqam teng {Sizningyosh == TotiqushYoshi}");
+Console.WriteLine($"Birinchi raqam ikkinchi raqam teng emas {Sizningyosh != TotiqushYoshi}");
 
