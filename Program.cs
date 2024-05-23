@@ -17,23 +17,23 @@ Console.WriteLine($"Yoshlar farqi {yoshlarFarqi}");
 //         Console.WriteLine(natija);
 
 // Logical operator &&, ||, !
-string message =
-    (Sizningyosh > 0 && TotiqushYoshi > 0)
-        ? "Sizning va to'tiqushning yoshi noldan katta..."
-        : "Sizning yoki to'tiqushning yoki ikkalangizningham yoshlaringiz noldan kichik...";
-        Console.WriteLine(message);
+// string message =
+//     (Sizningyosh > 0 && TotiqushYoshi > 0)
+//         ? "Sizning va to'tiqushning yoshi noldan katta..."
+//         : "Sizning yoki to'tiqushning yoki ikkalangizningham yoshlaringiz noldan kichik...";
+//         Console.WriteLine(message);
 
-string result =
-    (Sizningyosh > 0 || TotiqushYoshi > 0)
-        ? "Sizning yoki to'tiqushning yoshi noldan katta..."
-        : "Sizning va to'tiqushning yoshi noldan kichik...";
-        Console.WriteLine(result);
+// string result =
+//     (Sizningyosh > 0 || TotiqushYoshi > 0)
+//         ? "Sizning yoki to'tiqushning yoshi noldan katta..."
+//         : "Sizning va to'tiqushning yoshi noldan kichik...";
+//         Console.WriteLine(result);
 
-string show =
-    !(Sizningyosh > 0 || TotiqushYoshi > 0)
-        ? "Sizning yoki to'tiqushning yoshi noldan katta..."
-        : "Sizning yoki to'tiqushning yoshi noldan kichik...";
-        Console.WriteLine(show);
+// string show =
+//     !(Sizningyosh > 0 || TotiqushYoshi > 0)
+//         ? "Sizning yoki to'tiqushning yoshi noldan katta..."
+//         : "Sizning yoki to'tiqushning yoshi noldan kichik...";
+//         Console.WriteLine(show);
 
 // if(Sizningyosh>TotiqushYoshi)
 // {
