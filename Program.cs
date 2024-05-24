@@ -9,6 +9,21 @@ int Sizningyosh= int.Parse(Console.ReadLine());
 int TotiqushYoshi = 2;
 int yoshlarFarqi = Sizningyosh-TotiqushYoshi;
 Console.WriteLine($"Yoshlar farqi {yoshlarFarqi}");
+Console.WriteLine("Operatsiya turini kiriting=> +,-,*,/,%");
+string operation = Console.ReadLine();
+
+//Switch exressions
+string natijasi = operation switch
+{
+    "+"=>$"Sizning va to'tiqushning yoshlar yig'indisi {Sizningyosh+TotiqushYoshi}",
+    "-"=>$"Sizning va to'tiqushning yoshlar ayirmasi {Sizningyosh-TotiqushYoshi}",
+    "*"=>$"Sizning va to'tiqushning yoshlar ko'paytmasi {Sizningyosh*TotiqushYoshi}",
+    "/"=>$"Sizning va to'tiqushning yoshlar bo'linmasisi {Sizningyosh/TotiqushYoshi}",
+    "%"=>$"Sizning va to'tiqushning yoshlar yig'indisi {Sizningyosh%TotiqushYoshi}",
+    _=>"Operatsiya turi xato kiritildi...",
+};
+Console.WriteLine(natijasi);
+
 // //ternary operator
 // string natija =
 //     yoshlarFarqi >= 0
