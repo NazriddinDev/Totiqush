@@ -19,7 +19,7 @@ string natijasi = operation switch
     "-"=>$"Sizning va to'tiqushning yoshlar ayirmasi {Sizningyosh-TotiqushYoshi}",
     "*"=>$"Sizning va to'tiqushning yoshlar ko'paytmasi {Sizningyosh*TotiqushYoshi}",
     "/"=>$"Sizning va to'tiqushning yoshlar bo'linmasisi {Sizningyosh/TotiqushYoshi}",
-    "%"=>$"Sizning va to'tiqushning yoshlar yig'indisi {Sizningyosh%TotiqushYoshi}",
+    "%"=>$"Sizning va to'tiqushning yoshlarining qoldiqli {Sizningyosh%TotiqushYoshi}",
     _=>"Operatsiya turi xato kiritildi...",
 };
 Console.WriteLine(natijasi);
@@ -69,3 +69,30 @@ Console.WriteLine(natijasi);
 // Console.WriteLine($"Birinchi raqam ikkinchi raqamdan kichik yoki teng {Sizningyosh <= TotiqushYoshi}");
 // Console.WriteLine($"Birinchi raqam ikkinchi raqam teng {Sizningyosh == TotiqushYoshi}");
 // Console.WriteLine($"Birinchi raqam ikkinchi raqam teng emas {Sizningyosh != TotiqushYoshi}");
+
+//Array
+Console.WriteLine("Menga do'stingiz haqida ayting...");
+string[] friendsName = {"Vasya", "Nasya","Kasya","Masya"};
+int[] friendsAge = {2, 4, 5, 7, 6, 5};
+string[] friendsAddresss = {"Moscow", "London", "Australia", "USA"};
+System.Console.WriteLine($"{friendsName[0]} ning yoshi {friendsAge[0]} da, manzili esa {friendsAddresss[0]} ...");
+
+Console.WriteLine("Menga do'stingiz haqida ayting...");
+string[] dostlarNomi = new string[4];
+dostlarNomi[0] = "Vasya";
+dostlarNomi[1] = "Nasya";
+dostlarNomi[2] = "Kasya";
+dostlarNomi[3] = ism;
+int[] dostlarYoshi = {1,3, 2, Sizningyosh};
+
+//Use foreach
+foreach(string Nomi in dostlarNomi)
+{
+    Console.WriteLine(Nomi);
+}
+
+//Use for
+for(int i = 0; i <dostlarYoshi.Length; i++)
+{
+    Console.WriteLine($"{dostlarNomi[i]} ning yoshi {dostlarYoshi[i]} da...");
+}
